@@ -1,0 +1,21 @@
+{
+    "name": "mross/php7course",
+    "authors": [
+        {
+            "name": "Matt Rosser",
+            "email": "me@uk.uk"
+        }
+    ],
+    "require": {
+        "filp/whoops": "^2.2",
+        "vlucas/phpdotenv": "*",
+        "illuminate/database": "*",
+        "altorouter/altorouter": "1.1.0",
+        "respect/validation": "^1.1",
+        "twig/twig": "^2.0",
+        "duncan3dc/blade": "*"
+    },
+    "autoload": {
+      "psr-4" : {"Acme\\": "src/"}
+    }
+}
