@@ -7,11 +7,10 @@ use Respect\Validation\Validator as Valid;
 class Validator {
 
   public function isValid($validation_data){
+    
     $errors = [];
 
     foreach($validation_data as $name => $value){
-      if(isset($_REQUEST[$name])){
-
         $rules = explode("|", $value);
 
         foreach($rules as $rule){
@@ -38,13 +37,10 @@ class Validator {
 
             default:
             // Do nothing
+            $errors[] = "No Value Found!";
           }
         }  
-      } else {
-        $errors[] = "No Value Found!";
-      }
-    }
-
+      } 
     return $errors;
 
   }
