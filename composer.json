@@ -13,7 +13,8 @@
         "altorouter/altorouter": "1.1.0",
         "respect/validation": "^1.1",
         "twig/twig": "^2.0",
-        "duncan3dc/blade": "*"
+        "duncan3dc/blade": "*",
+        "robmorgan/phinx": "^0.10.2"
     },
     "autoload": {
       "psr-4" : {"Acme\\": "src/"}
